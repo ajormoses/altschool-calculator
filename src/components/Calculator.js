@@ -121,10 +121,10 @@ function evaluate({ currentOperand, previousOperand, operation }) {
       computation = prev * current;
       break;
     case "÷":
-      computation = prev / current;
+      computation = (prev / current).toFixed(3);
       break;
     case "%":
-      computation = (prev / 100) * current;
+      computation = ((prev / 100) * current).toFixed(3);
       break;
   }
 
