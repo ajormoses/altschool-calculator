@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/altschool-calculator/static/css/main.6a091aab.css",
-    "main.js": "/altschool-calculator/static/js/main.dacfb9cb.js",
+    "main.js": "/altschool-calculator/static/js/main.2317fe13.js",
     "static/js/787.ea011010.chunk.js": "/altschool-calculator/static/js/787.ea011010.chunk.js",
     "index.html": "/altschool-calculator/index.html",
     "main.6a091aab.css.map": "/altschool-calculator/static/css/main.6a091aab.css.map",
-    "main.dacfb9cb.js.map": "/altschool-calculator/static/js/main.dacfb9cb.js.map",
+    "main.2317fe13.js.map": "/altschool-calculator/static/js/main.2317fe13.js.map",
     "787.ea011010.chunk.js.map": "/altschool-calculator/static/js/787.ea011010.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a091aab.css",
-    "static/js/main.dacfb9cb.js"
+    "static/js/main.2317fe13.js"
   ]
 }
