@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+body {
+  background-color: var(--bodyColor);
+}
+
+:root {
+  --bodyColor: rgb(214, 214, 214);
+  --mainColor: rgb(214, 214, 214);
+  --calColor: white;
+  --screenColor: black;
+  --screenShadow: none;
+  --buttonColor: rgb(236, 235, 235);
+  --buttonShadow: rgb(190, 186, 186);
+  --keyboardColor: black;
+}
+
+.dark-theme {
+  --bodyColor: black;
+  --mainColor: rgb(22, 20, 20);
+  --calColor: none;
+  --screenColor: rgb(22, 20, 20);
+  --screenShadow: black;
+  --buttonColor: rgb(22, 20, 20);
+  --buttonShadow: rgb(39, 39, 39);
+  --keyboardColor: white;
+}
+
+main {
+  margin: 3rem 0 0;
+  background-color: var(--mainColor);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1rem var(--calColor);
+
+  header {
+    .screen {
+      color: white;
+      background-color: var(--screenColor);
+      padding: 2rem 1.5rem 3rem;
+      border-radius: 1.5rem 1.5rem 1rem 1rem;
+      box-shadow: 0 0.2rem 1rem var(--screenShadow);
+
+      &-header {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+
+        .bar {
+          transform: rotate(90deg);
+          margin-right: 0.5rem;
+        }
+
+        .toggle-theme {
+          margin-left: auto;
+        }
+      }
+
+      &-content {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+
+        &-text {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          text-align: right;
+
+          p {
+            color: rgb(173, 91, 173);
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    padding: 0.5rem 1.5rem 1.5rem;
+
+    .div-col {
+      padding: 0.2rem 0;
+    }
+
+    .div-col,
+    .button-col {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      color: var(--keyboardColor);
+    }
+
+    .button-col button {
+      color: var(--keyboardColor);
+      height: 55px;
+      background: var(--buttonColor);
+      width: 65px;
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      box-shadow: 0 0 0.7rem var(--buttonShadow);
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    header {
+      .screen {
+        &-content {
+          position: relative;
+          height: 100px;
+        }
+      }
+    }
+
+    .main-content {
+      .button-col button {
+        height: 45px;
+      }
+    }
+  }
+}
